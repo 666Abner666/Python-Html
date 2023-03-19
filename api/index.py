@@ -90,7 +90,8 @@ def login():
         return jsonify({'success': True})
 
 
-if __name__ == '__main__':
-    # 运行Flask应用程序
-    app.run()
+# if __name__ == '__main__':
+#     # 运行Flask应用程序
+#     app.run()
+
 
