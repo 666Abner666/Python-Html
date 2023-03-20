@@ -36,7 +36,7 @@ app = Flask(__name__, template_folder='templates')
 @app.route('/')
 def index():
     # 渲染index.html模板并返回结果
-    return '111'
+    return render_template('index.html')
 
 
 # @app.route('/data', methods=['POST'])
@@ -90,8 +90,8 @@ def index():
 #         return jsonify({'success': True})
 
 
-if __name__ == '__main__':
-    # 运行Flask应用程序
-    app.run()
+# if __name__ == '__main__':
+#     # 运行Flask应用程序
+#     app.run()
 
 
