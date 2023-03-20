@@ -13,12 +13,12 @@ import os
 # client = pymongo.MongoClient('127.0.0.1', 27017)
 # 创建数据库
 
-# client = pymongo.MongoClient(
-#     "mongodb+srv://Abner:Abner666@virus2.a6ehgde.mongodb.net/?retryWrites=true&w=majority")
-# db = client['Accounts(Test)']
-
-client = MongoClient(os.environ['MONGODB_URI'])
+client = pymongo.MongoClient(
+    "mongodb+srv://Abner:Abner666@virus2.a6ehgde.mongodb.net/?retryWrites=true&w=majority")
 db = client['Accounts(Test)']
+
+# client = MongoClient(os.environ['MONGODB_URI'])
+# db = client['Accounts(Test)']
 
 # 插入数据
 # db.NAME.insert_many([
